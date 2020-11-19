@@ -33,12 +33,13 @@ jobs:
         - compiler: clang
           env: C_CXX11=OFF C_LUAV=5.3.4 C_LXX=cxx C_EXTRA="-DLUABIND_CPLUSPLUS_LUA=ON"
           
-          
-        - compiler: clang
+        - os: linux
+          compiler: clang
           arch: ppc64le  
           env: C_CXX11=OFF C_LUAV=5.1.5 C_LXX=src
           
-        - compiler: clang
+        - os: linux
+          compiler: clang
           arch: ppc64le
           env: C_CXX11=OFF C_LUAV=5.3.4 C_LXX=cxx C_EXTRA="-DLUABIND_CPLUSPLUS_LUA=ON"
 
